@@ -30,11 +30,18 @@ ul li ul.dropdown li {
 }
 
 ul li ul.dropdown {
-    width: 100%;
+    width: 180px;
     background: #8c52ff;
     position: absolute;
     z-index: 999;
-    display: none;
+    /* display: none; */
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(44, 19, 56, 0.18), 0 1.5px 4px rgba(44, 19, 56, 0.12);
+    margin-top: 8px;
+    transition: opacity 0.25s cubic-bezier(0.4,0,0.2,1), transform 0.25s cubic-bezier(0.4,0,0.2,1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
 }
 
 ul li a:hover {
@@ -42,5 +49,26 @@ ul li a:hover {
 }
 
 ul li:hover ul.dropdown {
-    display: block;
+    /* display: block; */
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+ul li ul.dropdown li a, ul li ul.dropdown li button {
+    padding: 12px 20px;
+    color: #fff;
+    background: none;
+    border-radius: 8px;
+    transition: background 0.18s;
+    font-size: 14px;
+    text-align: left;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+ul li ul.dropdown li a:hover, ul li ul.dropdown li button:hover {
+    background: #a084e8;
+    color: #fff;
 }
