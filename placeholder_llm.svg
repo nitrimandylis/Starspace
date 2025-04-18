@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80">
+  <rect width="100" height="100" fill="#0f1a2c"/>
+  <text x="50" y="55" font-family="Comfortaa, sans-serif" font-size="12" fill="#a4ff5f" text-anchor="middle">LLM</text>
+  <rect x="10" y="10" width="80" height="80" fill="none" stroke="#a4ff5f" stroke-width="2" rx="5"/>
+</svg>

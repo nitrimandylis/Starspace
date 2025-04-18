@@ -1,74 +1,342 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Import Comfortaa font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Comfortaa', monospace;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
-ul {
+body {
+    font-family: 'Comfortaa', sans-serif; /* Use Comfortaa font */
+    font-weight: 300; /* Light weight */
+    background-color: #0f1a2c; /* Primary: Deep Navy Blue */
+    color: #dcdcdc; /* Text: Light Gray */
+    padding-top: 60px; /* Add padding to body to prevent content from hiding behind fixed nav */
+}
+
+.top-nav {
+    position: fixed; /* Fixed navigation bar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0f1a2c; /* Primary: Deep Navy Blue */
+    z-index: 1000; /* Ensure nav stays on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.top-nav ul {
     list-style: none;
-    background: #8c52ff;
+    background: #0f1a2c; /* Match nav background */
+    text-align: center; /* Center nav items */
 }
 
-ul li {
+.top-nav ul li {
     display: inline-block;
     position: relative;
 }
 
-ul li a {
+.top-nav ul li a {
     display: block;
-    padding: 15px 20px;
-    color: #FFF;
+    padding: 20px 25px; /* Adjust padding */
+    color: #dcdcdc; /* Text: Light Gray */
     text-decoration: none;
-    text-align: center;
-    font-size: 14px;
+    font-size: 16px; /* Slightly larger font */
+    transition: background-color 0.3s, color 0.3s;
 }
 
-ul li ul.dropdown li {
+.top-nav ul li ul.dropdown li {
     display: block;
 }
 
-ul li ul.dropdown {
-    width: 180px;
-    background: #8c52ff;
+.top-nav ul li ul.dropdown {
+    min-width: 180px; /* Minimum width */
+    background: #0f1a2c; /* Match nav background */
     position: absolute;
     z-index: 999;
-    /* display: none; */
-    border-radius: 10px;
-    box-shadow: 0 8px 24px rgba(44, 19, 56, 0.18), 0 1.5px 4px rgba(44, 19, 56, 0.12);
-    margin-top: 8px;
-    transition: opacity 0.25s cubic-bezier(0.4,0,0.2,1), transform 0.25s cubic-bezier(0.4,0,0.2,1);
+    border-radius: 5px; /* Subtle rounding */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 0; /* Align directly below parent */
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
     opacity: 0;
     pointer-events: none;
     transform: translateY(10px);
+    border: 1px solid #a4ff5f; /* Accent border */
 }
 
-ul li a:hover {
-    background: #6d30e9;
+.top-nav ul li a:hover,
+.top-nav ul li a:focus {
+    background-color: #a4ff5f; /* Accent: Tech Lime Green on hover/focus */
+    color: #0f1a2c; /* Text color changes for contrast */
 }
 
-ul li:hover ul.dropdown {
-    /* display: block; */
+.top-nav ul li:hover ul.dropdown {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
 }
 
-ul li ul.dropdown li a, ul li ul.dropdown li button {
+.top-nav ul li ul.dropdown li a {
     padding: 12px 20px;
-    color: #fff;
+    color: #dcdcdc; /* Text: Light Gray */
     background: none;
-    border-radius: 8px;
-    transition: background 0.18s;
+    border-radius: 0; /* No rounding inside dropdown */
+    transition: background-color 0.18s, color 0.18s;
     font-size: 14px;
     text-align: left;
     border: none;
     width: 100%;
-    cursor: pointer;
+    display: block; /* Ensure it takes full width */
 }
 
-ul li ul.dropdown li a:hover, ul li ul.dropdown li button:hover {
-    background: #a084e8;
-    color: #fff;
+.top-nav ul li ul.dropdown li a:hover,
+.top-nav ul li ul.dropdown li a:focus {
+    background-color: #ccff00; /* Accent: Electric Green */
+    color: #0f1a2c; /* Dark text for contrast */
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background-color: #0f1a2c; /* Placeholder - Add cosmic background later */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 300px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 36px; /* Heading size */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #a4ff5f; /* Accent: Tech Lime Green */
+}
+
+.hero-content p {
+    font-size: 18px; /* Subtitle size */
+    margin-bottom: 30px;
+    color: #dcdcdc; /* Text: Light Gray */
+}
+
+.cta-button {
+    background-color: #a4ff5f; /* Accent: Tech Lime Green */
+    color: #0f1a2c; /* Primary: Deep Navy Blue text */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ccff00; /* Accent: Electric Green */
+    transform: scale(1.05);
+}
+
+/* Intro Section Styles */
+.intro-section {
+    padding: 40px 20px;
+    max-width: 800px; /* Limit width for readability */
+    margin: 20px auto; /* Center the section */
+    background-color: rgba(220, 220, 220, 0.05); /* Slightly lighter background */
+    border-radius: 8px;
+}
+
+.intro-section h2 {
+    font-size: 28px; /* Heading size */
+    font-weight: bold;
+    color: #ccff00; /* Accent: Electric Green */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro-section p {
+    font-size: 16px; /* Paragraph size */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Teaser Section Placeholder Styles */
+.teaser-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.teaser-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ccff00; /* Accent: Electric Green */
+    margin-bottom: 30px;
+}
+
+/* Teaser Card Styles */
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Distribute cards evenly */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    gap: 20px; /* Space between cards */
+    max-width: 1000px; /* Max width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.teaser-card {
+    background-color: rgba(220, 220, 220, 0.1); /* Slightly lighter card background */
+    border: 1px solid #a4ff5f; /* Accent border */
+    border-radius: 8px;
+    padding: 25px;
+    width: calc(33.333% - 20px); /* Aim for 3 cards per row, accounting for gap */
+    min-width: 250px; /* Minimum card width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teaser-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+    width: 80px; /* Adjust size as needed */
+    height: 80px;
+    margin-bottom: 15px;
+    /* Add filter for SVG color if needed, e.g., filter: invert(1) brightness(1.5); */
+}
+
+.teaser-card h3 {
+    font-size: 22px;
+    color: #a4ff5f; /* Accent: Tech Lime Green */
+    margin-bottom: 10px;
+}
+
+.teaser-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #dcdcdc; /* Text: Light Gray */
+}
+
+.card-button {
+    /* Inherits styles from .cta-button */
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none; /* Hidden by default on larger screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute; /* Position relative to nav */
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001; /* Above nav links */
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #dcdcdc; /* Text: Light Gray */
+    margin: 5px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .top-nav ul.nav-links {
+        display: none; /* Hide links by default on small screens */
+        position: absolute;
+        top: 60px; /* Position below nav bar */
+        left: 0;
+        width: 100%;
+        background-color: #0f1a2c; /* Match nav background */
+        flex-direction: column;
+        text-align: left;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .top-nav ul.nav-links.active {
+        display: flex; /* Show when active */
+    }
+
+    .top-nav ul li {
+        display: block; /* Stack links vertically */
+        width: 100%;
+    }
+
+    .top-nav ul li a {
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(164, 255, 95, 0.2); /* Subtle separator */
+    }
+
+    .top-nav ul li:last-child a {
+        border-bottom: none;
+    }
+
+    .top-nav ul li ul.dropdown {
+        position: static; /* No absolute positioning needed */
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+        background-color: rgba(220, 220, 220, 0.05); /* Slightly different background */
+        margin-top: 0;
+        padding-left: 20px; /* Indent dropdown items */
+    }
+
+    .top-nav ul li ul.dropdown li a {
+        padding: 10px 20px;
+        color: #dcdcdc;
+    }
+
+    .top-nav ul li ul.dropdown li a:hover,
+    .top-nav ul li ul.dropdown li a:focus {
+        background-color: #ccff00;
+        color: #0f1a2c;
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger on small screens */
+    }
+
+    /* Card responsiveness */
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teaser-card {
+        width: 90%; /* Make cards take most of the width */
+        max-width: 400px; /* Limit max width */
+        margin-bottom: 20px;
+    }
 }

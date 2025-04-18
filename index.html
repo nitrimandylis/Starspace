@@ -6,34 +6,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   <title>Starspace</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-        <ul>
-        <li><a href="#">Home</a></li>
-        <li>
-            <a href="#">Large Language Models ▾</a>
-            <ul class="dropdown">
-              <li><button type="button">Informantion</button></li>
-            </ul>
-        </li>
-        <li>
-          <a href="#">Quantum Computing ▾</a>
-          <ul class="dropdown">
-            <li><button type="button">Theory</button></li>
-            <li><button type="button">Theory</button></li>
-            <li><button type="button">Theory</button></li>
-            <li><button type="button">Theory</button></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Robotics</a>
-          <ul class="dropdown">
-            <li><button type="button">Informantion</button></li>
-          </ul>
-        </li>
+  <nav class="top-nav">
+    <button class="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">LLMs ▾</a>
+        <ul class="dropdown">
+          <li><a href="llm_overview.html">LLM Overview</a></li>
+          <li><a href="llm_careers.html">LLM Careers</a></li>
         </ul>
-    </nav>
+      </li>
+      <li>
+        <a href="#">Quantum ▾</a>
+        <ul class="dropdown">
+          <li><a href="quantum_overview.html">Quantum Overview</a></li>
+          <li><a href="quantum_careers.html">Quantum Careers</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Robotics ▾</a>
+        <ul class="dropdown">
+          <li><a href="robotics_overview.html">Robotics Overview</a></li>
+          <li><a href="robotics_careers.html">Robotics Careers</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Header Section -->
+    <header class="hero-section">
+      <div class="hero-content">
+        <h1>Welcome to Starspace</h1>
+        <p>Where Computer Science Meets the Future</p>
+        <button class="cta-button">Explore Topics</button>
+      </div>
+      <!-- Placeholder for cosmic background -->
+    </header>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+      <h2>The Dawn of a New Age</h2>
+      <p>We live in the Information Age, a time defined by rapid technological advancements. Understanding the core concepts driving this change is crucial for navigating the future.</p>
+      <!-- YouTube Video Embed -->
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AZBKR_OgSOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <p>Starspace is your portal to exploring three fascinating and impactful fields: Large Language Models, Quantum Computing, and Robotics. Our goal is to demystify these complex topics and spark your curiosity about the possibilities they unlock.</p>
+      <p>Whether you're a student considering a career path or simply intrigued by the future of technology, join us on this journey of discovery.</p>
+    </section>
+
+    <!-- Teaser Cards Section (Placeholder) -->
+    <section class="teaser-section">
+      <h2>Discover the Future</h2>
+      <div class="card-container">
+        <!-- LLM Card -->
+        <div class="teaser-card">
+          <img src="placeholder_llm.svg" alt="AI Brain Icon" class="card-image"> <!-- Placeholder image -->
+          <h3>Large Language Models</h3>
+          <p>Explore the world of AI that understands and generates human language.</p>
+          <button class="cta-button card-button">Learn More</button>
+        </div>
+        <!-- Quantum Card -->
+        <div class="teaser-card">
+          <img src="placeholder_quantum.svg" alt="Quantum Chip Icon" class="card-image"> <!-- Placeholder image -->
+          <h3>Quantum Computing</h3>
+          <p>Dive into the revolutionary computing paradigm harnessing quantum mechanics.</p>
+          <button class="cta-button card-button">Learn More</button>
+        </div>
+        <!-- Robotics Card -->
+        <div class="teaser-card">
+          <img src="placeholder_robotics.svg" alt="Robot Arm Icon" class="card-image"> <!-- Placeholder image -->
+          <h3>Robotics</h3>
+          <p>Discover how machines are built to perform tasks in the physical world.</p>
+          <button class="cta-button card-button">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
 </body>
 </html>
