@@ -160,6 +160,101 @@ body {
     margin-bottom: 15px;
 }
 
+/* Page Header Styles (for subpages) */
+.page-header {
+    padding: 30px 20px; /* Adjust padding */
+    background-color: rgba(220, 220, 220, 0.05); /* Match content area background */
+    border-bottom: 1px solid #a4ff5f; /* Accent border */
+    margin-bottom: 20px; /* Space below header */
+    max-width: 800px; /* Limit width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header h1 {
+    font-size: 32px; /* Slightly smaller than hero */
+    font-weight: bold;
+    color: #a4ff5f; /* Accent: Tech Lime Green */
+    margin-top: 10px;
+    margin-bottom: 5px; /* Space below h1 */
+    text-align: left; /* Align left */
+}
+
+.page-header .breadcrumb {
+    font-size: 14px;
+    color: #dcdcdc; /* Light Gray */
+    margin-bottom: 10px;
+    text-align: left; /* Align left */
+}
+
+.page-header .breadcrumb a {
+    color: #a4ff5f; /* Accent: Tech Lime Green */
+    text-decoration: none;
+}
+
+.page-header .breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for content sections on subpages */
+.main-content-area {
+    padding: 40px 20px;
+    max-width: 800px; /* Limit width for readability */
+    margin: 20px auto; /* Center the section */
+    background-color: rgba(220, 220, 220, 0.05); /* Slightly lighter background like intro-section */
+    border-radius: 8px;
+}
+
+.main-content-area h2 {
+    font-size: 28px; /* Match intro/teaser heading size */
+    font-weight: bold;
+    color: #ccff00; /* Accent: Electric Green */
+    margin-bottom: 20px;
+    text-align: left; /* Align left for content pages */
+}
+
+.main-content-area p {
+    font-size: 16px; /* Paragraph size */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Page Header Styles (for subpages) */
+.page-header {
+    padding: 30px 20px; /* Adjust padding */
+    background-color: rgba(220, 220, 220, 0.05); /* Match content area background */
+    border-bottom: 1px solid #a4ff5f; /* Accent border */
+    margin-bottom: 20px; /* Space below header */
+    max-width: 800px; /* Limit width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header h1 {
+    font-size: 32px; /* Slightly smaller than hero */
+    font-weight: bold;
+    color: #a4ff5f; /* Accent: Tech Lime Green */
+    margin-top: 10px;
+    margin-bottom: 5px; /* Space below h1 */
+    text-align: left; /* Align left */
+}
+
+.page-header .breadcrumb {
+    font-size: 14px;
+    color: #dcdcdc; /* Light Gray */
+    margin-bottom: 10px;
+    text-align: left; /* Align left */
+}
+
+.page-header .breadcrumb a {
+    color: #a4ff5f; /* Accent: Tech Lime Green */
+    text-decoration: none;
+}
+
+.page-header .breadcrumb a:hover {
+    text-decoration: underline;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
