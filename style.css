@@ -435,3 +435,18 @@ body {
         margin-bottom: 20px;
     }
 }
+
+/* Language Toggle Button Styles */
+#language-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* Adjust padding if needed */
+    margin-left: 10px; /* Add some space between it and other nav items */
+}
+
+#language-toggle img {
+    display: block; /* Prevent extra space below the image */
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
