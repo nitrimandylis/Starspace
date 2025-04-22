@@ -19,7 +19,7 @@
       <span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li>
         <a href="#" data-i18n="nav-llms">LLMs ▾</a>
         <ul class="dropdown">
@@ -41,13 +41,19 @@
           <li><a href="pages/robotics/careers.html" data-i18n="nav-robotics-careers">Robotics Careers</a></li>
         </ul>
       </li>
-      <li><a href="about.html" data-i18n="nav-about">About</a></li>
-      <li><button id="language-toggle" aria-label="Switch Language"><img src="assets/images/globe_icon.svg" alt="Switch Language"></button></li>
+      <li><a href="about.html" >About</a></li>
+      <div class="language-switcher">
+        <label for="language">🌐 Language:</label>
+        <select id="language" name="language" onchange="window.location.href=this.value;">
+          <option value="index.html" selected>English</option>
+          <option value="el/index.html">Ελληνικά</option>
+        </select>
+      </div>
     </ul>
   </nav>
 
   <main>
-    <!-- Header Section -->
+  <!-- Header Section -->
     <header class="hero-section">
       <div class="hero-content" data-i18n="welcome-to-starspace">
         <h1 data-i18n="welcome-to-starspace">Welcome to Starspace</h1>

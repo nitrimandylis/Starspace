@@ -436,17 +436,14 @@ body {
     }
 }
 
-/* Language Toggle Button Styles */
-#language-toggle {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0; /* Adjust padding if needed */
-    margin-left: 10px; /* Add some space between it and other nav items */
+.language-switcher {
+    position: relative;
+    margin-left: 20px; /* Adjust as needed for spacing */
+    /* The rest of your styling */
 }
 
-#language-toggle img {
-    display: block; /* Prevent extra space below the image */
-    width: 24px; /* Adjust size as needed */
-    height: 24px; /* Adjust size as needed */
+.top-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
