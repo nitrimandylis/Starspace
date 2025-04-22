@@ -33,4 +33,4 @@ With a cosmic-themed design and accessible explanations, Starspace aims to inspi
 ## 📚 Getting Started
 To get started with Starspace, clone the repository and open `index.html` in your browser to explore the site. Ensure you have a stable internet connection to load external resources like Google Fonts.
 
-###I hope you enjoy my website! I am not planning to add any more features at this time since this was a school project.
+### I hope you enjoy my website! I am not planning to add any more features at this time since this was a school project.
