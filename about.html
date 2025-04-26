@@ -19,19 +19,19 @@
       <span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" data-i18n="nav-home">Home</a></li>
       <li>
-        <a href="#">LLMs ▾</a>
+        <a href="#" data-i18n="nav-llms">LLMs ▾</a>
         <ul class="dropdown">
-          <li><a href="pages/llm/overview.html">LLM Overview</a></li>
-          <li><a href="pages/llm/careers.html">LLM Careers</a></li>
+          <li><a href="pages/llm/overview.html" data-i18n="nav-llm-overview">LLM Overview</a></li>
+          <li><a href="pages/llm/careers.html" data-i18n="nav-llm-careers">LLM Careers</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">Quantum ▾</a>
+        <a href="#" data-i18n="nav-quantum">Quantum ▾</a>
         <ul class="dropdown">
-          <li><a href="pages/quantum/overview.html">Quantum Overview</a></li>
-          <li><a href="pages/quantum/careers.html">Quantum Careers</a></li>
+          <li><a href="pages/quantum/overview.html" data-i18n="nav-quantum-overview">Quantum Overview</a></li>
+          <li><a href="pages/quantum/careers.html" data-i18n="nav-quantum-careers">Quantum Careers</a></li>
         </ul>
       </li>
       <li>
@@ -42,69 +42,75 @@
         </ul>
       </li>
       <li><a href="about.html" data-i18n="nav-about">About</a></li>
+      <li>
+        <button id="language-toggle" aria-label="Switch Language">
+          <img src="../media/flag-en.svg" alt="English Flag" data-lang="en">
+          <!-- Initially show English flag, JS will update -->
+        </button>
+      </li>
     </ul>
   </nav>
 
   <main>
     <header class="page-header">
-      <h1>About Starspace</h1>
+      <h1 data-i18n="about-title">About Starspace</h1>
     </header>
 
     <!-- Main Content Area -->
     <section class="main-content-area">
       <div class="creator-card">
-        <h2>Created by</h2>
+        <h2 data-i18n="about-created-by">Created by</h2>
         <div class="creator-info">
-          <div class="creator-name">Nick Trimandylis</div>
-          <div class="creator-role">Developer & Designer</div>
+          <div  data-i18n='creator-name' class="creator-name">Nick Trimandylis</div>
+          <div data-i18n='creator-role' class="creator-role">Developer & Designer</div>
         </div>
       </div>
       
-      <h2>Project Purpose</h2>
-      <p>Starspace is an educational initiative designed to introduce students to cutting-edge technologies in computer science. Our mission is to:</p>
+      <h2 data-i18n="about-purpose-title">Project Purpose</h2>
+      <p data-i18n="about-p1">Starspace is an educational initiative designed to introduce students to cutting-edge technologies in computer science. Our mission is to:</p>
       <ul class="mission-list">
-        <li>Demystify complex technical concepts</li>
-        <li>Showcase career opportunities in emerging fields</li>
-        <li>Inspire the next generation of technologists</li>
-        <li>Provide accessible learning resources</li>
+        <li data-i18n="about-mission1">Demystify complex technical concepts</li>
+        <li data-i18n="about-mission2">Showcase career opportunities in emerging fields</li>
+        <li data-i18n="about-mission3">Inspire the next generation of technologists</li>
+        <li data-i18n="about-mission4">Provide accessible learning resources</li>
       </ul>
       <br>
       <br>
-      <h2>Educational Context</h2>
-      <p>This project was developed for my MYP5 Comp Sci project. It serves as both an educational resource and career guidance tool, highlighting three key technology areas:</p>
+      <h2 data-i18n="about-context-title">Educational Context</h2>
+      <p data-i18n="about-p2">This project was developed for my MYP5 Comp Sci project. It serves as both an educational resource and career guidance tool, highlighting three key technology areas:</p>
       
       <div class="tech-highlights">
         <div class="tech-card">
-          <h3>Large Language Models</h3>
-          <p>Exploring the AI revolution in natural language processing</p>
+          <h3 data-i18n="about-tech-llm-title">Large Language Models</h3>
+          <p data-i18n="about-tech-llm-desc">Exploring the AI revolution in natural language processing</p>
         </div>
         <div class="tech-card">
-          <h3>Quantum Computing</h3>
-          <p>Understanding the next frontier in computational power</p>
+          <h3 data-i18n="about-tech-quantum-title">Quantum Computing</h3>
+          <p data-i18n="about-tech-quantum-desc">Understanding the next frontier in computational power</p>
         </div>
         <div class="tech-card">
-          <h3>Robotics</h3>
-          <p>Discovering the intersection of hardware and AI</p>
+          <h3 data-i18n="about-tech-robotics-title">Robotics</h3>
+          <p data-i18n="about-tech-robotics-desc">Discovering the intersection of hardware and AI</p>
         </div>
       </div>
       
-      <h2>Technical Details</h2>
-      <p>This website was built using modern web technologies:</p>
+      <h2 data-i18n="about-tech-details-title">Technical Details</h2>
+      <p data-i18n="about-tech-details-p">This website was built using modern web technologies:</p>
       <ul class="tech-stack">
-        <ol>HTML5 & CSS3 for structure and styling</ol>
+        <ol data-i18n="about-tech-stack1">HTML5 & CSS3 for structure and styling</ol>
         <br>
-        <ol>JavaScript for interactive elements</ol>
-        <ol>Responsive design for all device sizes</ol>
+        <ol data-i18n="about-tech-stack2">JavaScript for interactive elements</ol>
+        <ol data-i18n="about-tech-stack3">Responsive design for all device sizes</ol>
         <br>
-        <ol>Comfortaa typography for readability</ol>
+        <ol data-i18n="about-tech-stack4">Github pages for easy hosting</ol>
       </ul>
       <br>
       <br>
-      <h2>Contact</h2>
+      <h2 data-i18n="about-contact-title">Contact</h2>
       <div class="contact-info">
-        <p>For questions or feedback about Starspace:</p>
-        <p>Email: <a href="mailto:nicktrim8@duck.com">nicktrim8@duck.com</a></p>
-        <p>School: CGS - Costeas Geitonas School</p>
+        <p data-i18n="about-contact-p">For questions or feedback about Starspace:</p>
+        <p data-i18n="about-contact-email">Email: <a href="mailto:nicktrim8@duck.com">nicktrim8@duck.com</a></p>
+        <p data-i18n="about-contact-school">School: CGS - Costeas Geitonas School</p>
       </div>
     </section>
   </main>

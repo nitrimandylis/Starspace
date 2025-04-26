@@ -19,50 +19,55 @@
       <span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../index.html" data-i18n="nav-home">Home</a></li>
       <li>
-        <a href="#">LLMs ▾</a>
+        <a href="#" data-i18n="nav-llms">LLMs ▾</a>
         <ul class="dropdown">
-          <li><a href="../llm/overview.html">LLM Overview</a></li>
-          <li><a href="../llm/careers.html">LLM Careers</a></li>
+          <li><a href="../llm/overview.html" data-i18n="nav-llm-overview">LLM Overview</a></li>
+          <li><a href="../llm/careers.html" data-i18n="nav-llm-careers">LLM Careers</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">Quantum ▾</a>
+        <a href="#" data-i18n="nav-quantum">Quantum ▾</a>
         <ul class="dropdown">
-          <li><a href="../quantum/overview.html">Quantum Overview</a></li>
-          <li><a href="../quantum/careers.html">Quantum Careers</a></li>
+          <li><a href="../quantum/overview.html" data-i18n="nav-quantum-overview">Quantum Overview</a></li>
+          <li><a href="../quantum/careers.html" data-i18n="nav-quantum-careers">Quantum Careers</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">Robotics ▾</a>
+        <a href="#" data-i18n="nav-robotics">Robotics ▾</a>
         <ul class="dropdown">
-          <li><a href="overview.html">Robotics Overview</a></li>
-          <li><a href="careers.html">Robotics Careers</a></li>
+          <li><a href="overview.html" data-i18n="nav-robotics-overview">Robotics Overview</a></li>
+          <li><a href="careers.html" data-i18n="nav-robotics-careers">Robotics Careers</a></li>
         </ul>
       </li>
-      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../about.html" data-i18n="nav-about">About</a></li>
+      <li>
+        <button id="language-toggle" aria-label="Switch Language">
+          <img src="../../media/flag-en.svg" alt="English Flag" data-lang="en">
+        </button>
+      </li>
     </ul>
   </nav>
 
   <main>
     <header class="page-header">
       <div class="breadcrumb">
-        <a href="../../index.html">Home</a> &gt; <a href="#">Robotics</a> &gt; Overview
+        <a href="../../index.html" data-i18n="breadcrumb-home">Home</a> &gt; <a href="#" data-i18n="breadcrumb-robotics">Robotics</a> &gt; <span data-i18n="breadcrumb-overview">Overview</span>
       </div>
-      <h1>What is Robotics?</h1>
+      <h1 data-i18n="robotics-overview-title">What is Robotics?</h1>
     </header>
 
     <!-- Main Content Area -->
     <section class="main-content-area">
-      <h2>Definition</h2>
-      <p>Robotics is the interdisciplinary branch of engineering and science that includes mechanical engineering, electrical engineering, computer science, and others. It involves the design, construction, operation, and use of robots.</p>
+      <h2 data-i18n="robotics-overview-definition-title">Definition</h2>
+      <p data-i18n="robotics-overview-definition-p">Robotics is the interdisciplinary branch of engineering and science that includes mechanical engineering, electrical engineering, computer science, and others. It involves the design, construction, operation, and use of robots.</p>
       
-      <h2>How It Works</h2>
-      <p>Robots function through a combination of sensors, actuators, and control systems. Sensors gather information from the environment, actuators perform actions, and control systems process data to make decisions.</p>
+      <h2 data-i18n="robotics-overview-how-title">How It Works</h2>
+      <p data-i18n="robotics-overview-how-p">Robots function through a combination of sensors, actuators, and control systems. Sensors gather information from the environment, actuators perform actions, and control systems process data to make decisions.</p>
       
-      <h2>Potential Applications</h2>
-      <p>Robotics has applications in manufacturing, healthcare, space exploration, and more. It is transforming industries by automating tasks and improving efficiency.</p>
+      <h2 data-i18n="robotics-overview-apps-title">Potential Applications</h2>
+      <p data-i18n="robotics-overview-apps-p">Robotics has applications in manufacturing, healthcare, space exploration, and more. It is transforming industries by automating tasks and improving efficiency.</p>
       
       <!-- Placeholder for infographics/images -->
       <div class="image-container" style="margin: 20px 0; text-align: center;">
@@ -72,8 +77,8 @@
       <!-- Placeholder for side quote panel -->
       <aside class="quote-panel">
         <blockquote>
-          "In the twenty-first century, the robot will take the place which slave labor occupied in ancient civilization."
-          <footer>- Nikola Tesla</footer>
+          "<span data-i18n="robotics-overview-quote">In the twenty-first century, the robot will take the place which slave labor occupied in ancient civilization.</span>"
+          <footer data-i18n="robotics-overview-quote-author">- Nikola Tesla</footer>
         </blockquote>
       </aside>
     </section>
