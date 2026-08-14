@@ -19,19 +19,19 @@
       <span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" data-i18n="nav-home">Home</a></li>
       <li>
-        <a href="#">LLMs ▾</a>
+        <a href="#" data-i18n="nav-llms">LLMs ▾</a>
         <ul class="dropdown">
-          <li><a href="pages/llm/overview.html">LLM Overview</a></li>
-          <li><a href="pages/llm/careers.html">LLM Careers</a></li>
+          <li><a href="pages/llm/overview.html" data-i18n="nav-llm-overview">LLM Overview</a></li>
+          <li><a href="pages/llm/careers.html" data-i18n="nav-llm-careers">LLM Careers</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">Quantum ▾</a>
+        <a href="#" data-i18n="nav-quantum">Quantum ▾</a>
         <ul class="dropdown">
-          <li><a href="pages/quantum/overview.html">Quantum Overview</a></li>
-          <li><a href="pages/quantum/careers.html">Quantum Careers</a></li>
+          <li><a href="pages/quantum/overview.html" data-i18n="nav-quantum-overview">Quantum Overview</a></li>
+          <li><a href="pages/quantum/careers.html" data-i18n="nav-quantum-careers">Quantum Careers</a></li>
         </ul>
       </li>
       <li>
@@ -53,50 +53,50 @@
   <main>
     <!-- Header Section -->
     <header class="hero-section">
-      <div class="hero-content" data-i18n="welcome-to-starspace">
-        <h1 data-i18n="welcome-to-starspace">Welcome to Starspace</h1>
-        <p data-i18n="header-paragraph">Where Computer Science Meets the Future</p>
-        <button class="cta-button">Explore Topics</button>
+      <div class="hero-content">
+        <h1 data-i18n="hero-title">Welcome to Starspace</h1>
+        <p data-i18n="hero-subtitle">Where Computer Science Meets the Future</p>
+        <a href="#topics" class="cta-button" data-i18n="hero-cta">Explore Topics</a>
       </div>
       <!-- Placeholder for cosmic background -->
     </header>
 
     <!-- Intro Section -->
     <section class="intro-section">
-      <h2>The Dawn of a New Age</h2>
-      <p>We live in the Information Age, a time defined by rapid technological advancements. Understanding the core concepts driving this change is crucial for navigating the future.</p>
+      <h2 data-i18n="intro-title">The Dawn of a New Age</h2>
+      <p data-i18n="intro-p1">We live in the Information Age, a time defined by rapid technological advancements. Understanding the core concepts driving this change is crucial for navigating the future.</p>
       <!-- YouTube Video Embed -->
       <div class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/AZBKR_OgSOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
-      <p>Starspace is your portal to exploring three fascinating and impactful fields: Large Language Models, Quantum Computing, and Robotics. Our goal is to demystify these complex topics and spark your curiosity about the possibilities they unlock.</p>
-      <p>Whether you're a student considering a career path or simply intrigued by the future of technology, join us on this journey of discovery.</p>
+      <p data-i18n="intro-p2">Starspace is your portal to exploring three fascinating and impactful fields: Large Language Models, Quantum Computing, and Robotics. Our goal is to demystify these complex topics and spark your curiosity about the possibilities they unlock.</p>
+      <p data-i18n="intro-p3">Whether you're a student considering a career path or simply intrigued by the future of technology, join us on this journey of discovery.</p>
     </section>
 
     <!-- Teaser Cards Section (Placeholder) -->
-    <section class="teaser-section">
-      <h2>Discover the Future</h2>
+    <section class="teaser-section" id="topics">
+      <h2 data-i18n="teaser-title">Discover the Future</h2>
       <div class="card-container">
         <!-- LLM Card -->
         <div class="teaser-card">
-          <img src="media/placeholder_llm.svg" alt="AI Brain Icon" class="card-image"> 
-          <h3>Large Language Models</h3>
-          <p>Explore the world of AI that understands and generates human language.</p>
-          <a href="pages/llm/overview.html" class="cta-button card-button">Learn More</a>
+          <img src="media/placeholder_llm.svg" alt="AI Brain Icon" class="card-image">
+          <h3 data-i18n="teaser-llm-title">Large Language Models</h3>
+          <p data-i18n="teaser-llm-desc">Explore the world of AI that understands and generates human language.</p>
+          <a href="pages/llm/overview.html" class="cta-button card-button" data-i18n="teaser-cta">Learn More</a>
         </div>
         <!-- Quantum Card -->
         <div class="teaser-card">
-          <img src="media/placeholder_quantum.svg" alt="Quantum Chip Icon" class="card-image"> 
-          <h3>Quantum Computing</h3>
-          <p>Dive into the revolutionary computing paradigm harnessing quantum mechanics.</p>
-          <a href="pages/quantum/overview.html" class="cta-button card-button">Learn More</a>
+          <img src="media/placeholder_quantum.svg" alt="Quantum Chip Icon" class="card-image">
+          <h3 data-i18n="teaser-quantum-title">Quantum Computing</h3>
+          <p data-i18n="teaser-quantum-desc">Dive into the revolutionary computing paradigm harnessing quantum mechanics.</p>
+          <a href="pages/quantum/overview.html" class="cta-button card-button" data-i18n="teaser-cta">Learn More</a>
         </div>
         <!-- Robotics Card -->
         <div class="teaser-card">
           <img src="media/placeholder_robotics.svg" alt="Robot Arm Icon" class="card-image">
-          <h3>Robotics</h3>
-          <p>Discover how machines are built to perform tasks in the physical world.</p>
-          <a href="pages/robotics/overview.html" class="cta-button card-button">Learn More</a>
+          <h3 data-i18n="teaser-robotics-title">Robotics</h3>
+          <p data-i18n="teaser-robotics-desc">Discover how machines are built to perform tasks in the physical world.</p>
+          <a href="pages/robotics/overview.html" class="cta-button card-button" data-i18n="teaser-cta">Learn More</a>
         </div>
       </div>
     </section>

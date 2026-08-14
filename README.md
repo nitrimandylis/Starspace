@@ -67,7 +67,8 @@ it for free, forever, like a small immortal librarian.
 |---|---|
 | `index.html` | landing page |
 | `about.html` | the why |
-| `main.js` | navigation and interactivity |
+| `main.js` | navigation, language switching, and the EN/EL translation table |
+| `check-i18n.js` | `node check-i18n.js` — fails if a page and the translation table disagree |
 | `style.css` | the styling |
 | `pages/llm/` `pages/quantum/` `pages/robotics/` | overview + careers per topic |
 | `media/` | logo, topic artwork, EN/EL flags |

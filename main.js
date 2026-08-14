@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const translations = {
     en: {
       'nav-llms': 'LLMs ▾',
-      'nav-llms-overview': 'LLM Overview',
-      'nav-llms-careers': 'LLM Careers',
+      'nav-llm-overview': 'LLM Overview',
+      'nav-llm-careers': 'LLM Careers',
       'nav-quantum': 'Quantum ▾',
       'nav-quantum-overview': 'Quantum Overview',
       'nav-quantum-careers': 'Quantum Careers',
@@ -30,30 +30,31 @@ document.addEventListener('DOMContentLoaded', () => {
       'nav-robotics-careers': 'Robotics Careers',
       'nav-home': 'Home',
       'nav-about': 'About',
-      'hero-title': 'Explore the Frontiers of Technology',
-      'hero-subtitle': 'Dive into the worlds of LLMs, Quantum Computing, and Robotics.',
-      'hero-cta': 'Learn More',
-      'intro-title': 'Welcome to Starspace',
-      'intro-p1': 'Your portal to understanding the cutting-edge fields shaping our future. Explore comprehensive overviews and potential career paths in Large Language Models (LLMs), Quantum Computing, and Robotics.',
-      'intro-p2': 'Whether you\'re a student, professional, or just curious, find the information you need to navigate these exciting domains.',
+      'hero-title': 'Welcome to Starspace',
+      'hero-subtitle': 'Where Computer Science Meets the Future',
+      'hero-cta': 'Explore Topics',
 
+      'intro-title': 'The Dawn of a New Age',
+      'intro-p1': 'We live in the Information Age, a time defined by rapid technological advancements. Understanding the core concepts driving this change is crucial for navigating the future.',
+      'intro-p2': 'Starspace is your portal to exploring three fascinating and impactful fields: Large Language Models, Quantum Computing, and Robotics. Our goal is to demystify these complex topics and spark your curiosity about the possibilities they unlock.',
+      'intro-p3': 'Whether you\'re a student considering a career path or simply intrigued by the future of technology, join us on this journey of discovery.',
 
-
-
-      // Add more keys for index.html
+      // index.html teaser cards
+      'teaser-title': 'Discover the Future',
+      'teaser-cta': 'Learn More',
       'teaser-llm-title': 'Large Language Models',
-      'teaser-llm-desc': 'Uncover the power of AI language understanding and generation.',
+      'teaser-llm-desc': 'Explore the world of AI that understands and generates human language.',
       'teaser-quantum-title': 'Quantum Computing',
-      'teaser-quantum-desc': 'Explore the revolutionary potential of quantum mechanics for computation.',
+      'teaser-quantum-desc': 'Dive into the revolutionary computing paradigm harnessing quantum mechanics.',
       'teaser-robotics-title': 'Robotics',
-      'teaser-robotics-desc': 'Discover the advancements in automated systems and intelligent machines.',
+      'teaser-robotics-desc': 'Discover how machines are built to perform tasks in the physical world.',
 
 
 
       // about.html page keys
       'about-title': 'About Starspace',
       'about-created-by': 'Created by',
-      'creator-info': 'Nick Trimandylis',
+      'creator-name': 'Nick Trimandylis',
       'creator-role': 'Developer & Designer',
       'about-purpose-title': 'Project Purpose',
       'about-p1': 'Starspace is an educational initiative designed to introduce students to cutting-edge technologies in computer science. Our mission is to:',
@@ -134,32 +135,32 @@ document.addEventListener('DOMContentLoaded', () => {
       'robotics-overview-how-title': 'How It Works',
       'robotics-overview-how-p': 'Robots function through a combination of sensors, actuators, and control systems. Sensors gather information from the environment, actuators perform actions, and control systems process data to make decisions.',
       "robotics-overview-apps-title": "Potential Applications",
-      'robotics-overview-apps-p': "Robotics has applications in manufacturing, healthcare, space exploration, and more. It is transforming industries by automating tasks and improving efficiency",
+      'robotics-overview-apps-p': "Robotics has applications in manufacturing, healthcare, space exploration, and more. It is transforming industries by automating tasks and improving efficiency.",
       'robotics-overview-quote': 'In the twenty-first century, the robot will take the place which slave labor occupied in ancient civilization.',
       'robotics-overview-quote-author' : '- Nikola Tesla',
       
       // Robotics Careers page keys
       'robotics-careers-title': 'Careers in Robotics',
       'robotics-careers-opportunities-title': 'Opportunities',
-      'robotics-careers-opportunities-p': 'Quantum computing offers diverse career paths, including roles as quantum algorithm developers, quantum hardware engineers, and quantum software researchers. These professionals work on cutting-edge technologies that have the potential to revolutionize industries.',
+      'robotics-careers-opportunities-p': 'Robotics offers a wide range of career opportunities, including roles in research, development, and the application of robotic technologies. Professionals in this field work on innovative solutions that are transforming industries such as healthcare, manufacturing, and space exploration.',
       'robotics-careers-skills-title': 'Skills Required',
       'robotics-careers-skills-p': 'To thrive in robotics, you\'ll need strong programming skills, a solid understanding of mechanical engineering principles, and the ability to solve complex problems. Experience with AI and machine learning can also be beneficial.',
       'robotics-careers-growth-title': 'Industry Growth',
       'robotics-careers-growth-p': 'The robotics industry is experiencing rapid growth, driven by advancements in technology and increasing demand across various sectors. This growth presents exciting opportunities for professionals looking to make an impact.',
       
       //Breadcrumbs
-      'breadcrumbs-home': 'Home',
-      'breadcrumbs-llm': 'LLM',
-      'breadcrumbs-quantum': 'Quantum',
-      'breadcrumbs-robotics': 'Robotics',
-      'breadcrumbs-overview': 'Overview',
-      'breadcrumbs-careers': 'Careers',
+      'breadcrumb-home': 'Home',
+      'breadcrumb-llm': 'LLM',
+      'breadcrumb-quantum': 'Quantum',
+      'breadcrumb-robotics': 'Robotics',
+      'breadcrumb-overview': 'Overview',
+      'breadcrumb-careers': 'Careers',
     
     },
     el: {
       'nav-llms': 'Μεγάλα Γλωσσικά Μοντέλα ▾',
-      'nav-llms-overview': 'Επισκόπηση LLM',
-      'nav-llms-careers': 'Καριέρες στα LLM',
+      'nav-llm-overview': 'Επισκόπηση LLM',
+      'nav-llm-careers': 'Καριέρες στα LLM',
       'nav-quantum': 'Κβαντική Υπολογιστική ▾',
       'nav-quantum-overview': 'Επισκόπηση Κβαντικής Υπολογιστικής',
       'nav-quantum-careers': 'Καριέρες στην Κβαντική Υπολογιστική',
@@ -169,24 +170,27 @@ document.addEventListener('DOMContentLoaded', () => {
       'nav-home': 'Αρχική',
       'nav-about': 'Σχετικά',
       
-      'hero-title': 'Εξερεύνησε τα Σύνορα της Τεχνολογίας',
-      'hero-subtitle': 'Βούτηξε στους κόσμους των LLMs, της Κβαντικής Υπολογιστικής και της Ρομποτικής.',
-      'hero-cta': 'Μάθε Περισσότερα',
-      
-      'intro-title': 'Καλώς ήρθες στο Starspace',
-      'intro-p1': 'Η πύλη σου για την κατανόηση των αιχμηρών πεδίων που διαμορφώνουν το μέλλον μας. Εξερεύνησε πλήρεις επισκοπήσεις και πιθανές επαγγελματικές διαδρομές στα Μεγάλα Γλωσσικά Μοντέλα (LLMs), την Κβαντική Υπολογιστική και τη Ρομποτική.',
-      'intro-p2': 'Είτε είσαι μαθητής, επαγγελματίας ή απλά περίεργος, βρες τις πληροφορίες που χρειάζεσαι για να πλοηγηθείς σε αυτούς τους συναρπαστικούς τομείς.',
-    
+      'hero-title': 'Καλώς ήρθες στο Starspace',
+      'hero-subtitle': 'Εκεί όπου η Επιστήμη Υπολογιστών Συναντά το Μέλλον',
+      'hero-cta': 'Εξερεύνησε τα Θέματα',
+
+      'intro-title': 'Η Αυγή μιας Νέας Εποχής',
+      'intro-p1': 'Ζούμε στην Εποχή της Πληροφορίας, μια περίοδο που ορίζεται από ραγδαίες τεχνολογικές εξελίξεις. Η κατανόηση των βασικών εννοιών πίσω από αυτή την αλλαγή είναι καθοριστική για να πλοηγηθείς στο μέλλον.',
+      'intro-p2': 'Το Starspace είναι η πύλη σου για την εξερεύνηση τριών συναρπαστικών πεδίων: των Μεγάλων Γλωσσικών Μοντέλων, της Κβαντικής Υπολογιστικής και της Ρομποτικής. Στόχος μας είναι να απλοποιήσουμε αυτά τα σύνθετα θέματα και να ξυπνήσουμε την περιέργειά σου για όσα ανοίγουν.',
+      'intro-p3': 'Είτε είσαι μαθητής που σκέφτεται μια επαγγελματική πορεία είτε απλώς σε ενδιαφέρει το μέλλον της τεχνολογίας, έλα μαζί μας σε αυτό το ταξίδι ανακάλυψης.',
+
+      'teaser-title': 'Ανακάλυψε το Μέλλον',
+      'teaser-cta': 'Μάθε Περισσότερα',
       'teaser-llm-title': 'Μεγάλα Γλωσσικά Μοντέλα',
-      'teaser-llm-desc': 'Ανακάλυψε τη δύναμη της κατανόησης και παραγωγής γλώσσας από την Τεχνητή Νοημοσύνη.',
+      'teaser-llm-desc': 'Εξερεύνησε τον κόσμο της ΤΝ που κατανοεί και παράγει ανθρώπινη γλώσσα.',
       'teaser-quantum-title': 'Κβαντική Υπολογιστική',
-      'teaser-quantum-desc': 'Εξερεύνησε τη ριζοσπαστική δυναμική της κβαντικής μηχανικής στους υπολογισμούς.',
+      'teaser-quantum-desc': 'Βούτηξε στο επαναστατικό υπολογιστικό μοντέλο που αξιοποιεί την κβαντική μηχανική.',
       'teaser-robotics-title': 'Ρομποτική',
-      'teaser-robotics-desc': 'Ανακάλυψε τις εξελίξεις στα αυτοματοποιημένα συστήματα και στις ευφυείς μηχανές.',
+      'teaser-robotics-desc': 'Ανακάλυψε πώς κατασκευάζονται μηχανές που εκτελούν εργασίες στον φυσικό κόσμο.',
     
       'about-title': 'Σχετικά με το Starspace',
       'about-created-by': 'Δημιουργήθηκε από',
-      'creator-info': 'Nick Trimandylis',
+      'creator-name': 'Nick Trimandylis',
       'creator-role': 'Προγραμματιστής & Σχεδιαστής',
       
       'about-purpose-title': 'Σκοπός του Έργου',
@@ -279,12 +283,12 @@ document.addEventListener('DOMContentLoaded', () => {
       'robotics-careers-growth-p': 'Ο κλάδος της ρομποτικής αναπτύσσεται ραγδαία, δημιουργώντας συναρπαστικές ευκαιρίες.',
     
       // Breadcrumbs
-      'breadcrumbs-home': 'Αρχική',
-      'breadcrumbs-llm': 'LLM',
-      'breadcrumbs-quantum': 'Κβαντική',
-      'breadcrumbs-robotics': 'Ρομποτική',
-      'breadcrumbs-overview': 'Επισκόπηση',
-      'breadcrumbs-careers': 'Καριέρες',
+      'breadcrumb-home': 'Αρχική',
+      'breadcrumb-llm': 'LLM',
+      'breadcrumb-quantum': 'Κβαντική',
+      'breadcrumb-robotics': 'Ρομποτική',
+      'breadcrumb-overview': 'Επισκόπηση',
+      'breadcrumb-careers': 'Καριέρες',
     }
       
     
