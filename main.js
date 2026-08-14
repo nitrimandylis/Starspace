@@ -310,12 +310,35 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.lang = lang;
   }
 
+  // Some browsers refuse localStorage: private windows, and pages opened
+  // straight from disk with file:// URLs. Reading or writing then throws, so
+  // keep a copy in a variable. The choice still will not survive a reload
+  // there, but the button keeps working instead of dying silently.
+  let lastChosenLang = null;
+
+  function readStoredLang() {
+    try {
+      return localStorage.getItem('preferredLanguage');
+    } catch (error) {
+      return lastChosenLang;
+    }
+  }
+
+  function storeLang(lang) {
+    lastChosenLang = lang;
+    try {
+      localStorage.setItem('preferredLanguage', lang);
+    } catch (error) {
+      console.warn('This browser is not letting the site save your language choice.');
+    }
+  }
+
   function setLanguage(lang) {
     if (!['en', 'el'].includes(lang)) {
       console.warn(`Unsupported language: ${lang}. Defaulting to English.`);
       lang = 'en';
     }
-    localStorage.setItem('preferredLanguage', lang);
+    storeLang(lang);
     applyTranslations(lang);
     if (languageToggleImg) {
       const flagPath = languageToggleImg.src.substring(0, languageToggleImg.src.lastIndexOf('/') + 1);
@@ -327,7 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function toggleLanguage() {
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = readStoredLang() || 'en';
     const newLang = currentLang === 'en' ? 'el' : 'en';
     setLanguage(newLang);
   }
@@ -337,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
     languageToggle.addEventListener('click', toggleLanguage);
 
     // Determine initial language
-    let initialLang = localStorage.getItem('preferredLanguage');
+    let initialLang = readStoredLang();
     if (!initialLang) {
       // Detect browser language (simplified)
       const browserLang = navigator.language.split('-')[0]; // Get 'en' from 'en-US'
@@ -351,7 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
       // Fallback if toggle button isn't found (e.g., error pages)
       // Try to apply translations based on browser pref if no stored pref
-      let initialLang = localStorage.getItem('preferredLanguage');
+      let initialLang = readStoredLang();
       if (!initialLang) {
           const browserLang = navigator.language.split('-')[0];
           initialLang = (browserLang === 'el') ? 'el' : 'en';
