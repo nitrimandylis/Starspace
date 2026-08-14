@@ -70,7 +70,11 @@ body {
     color: #0f1a2c; /* Text color changes for contrast */
 }
 
-.top-nav ul li:hover ul.dropdown {
+/* focus-within keeps the menu open for keyboard users. Without it the links
+   inside stay invisible but are still reachable with Tab, so the focus
+   outline disappears off the top of the page. */
+.top-nav ul li:hover ul.dropdown,
+.top-nav ul li:focus-within ul.dropdown {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
