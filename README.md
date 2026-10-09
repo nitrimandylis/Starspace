@@ -16,6 +16,8 @@
 
 </div>
 
+[![starspace home: welcome banner, explore topics button, and the dawn of a new age, video included](.github/assets/screenshot.jpg)](https://nitrimandylis.github.io/Starspace/)
+
 ---
 
 ## 🌌 What is this
