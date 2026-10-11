@@ -12,11 +12,11 @@
 ![hosting](https://img.shields.io/badge/hosting-github_pages._free._eternal-7d8ec7?style=flat-square&labelColor=10142a)
 ![jargon](https://img.shields.io/badge/jargon-translated_to_human-f5d547?style=flat-square&labelColor=10142a)
 
-**[→ live at nitrimandylis.github.io/Starspace](https://nitrimandylis.github.io/Starspace/)**
+**[→ live at starspace.nicktrim.com](https://starspace.nicktrim.com/)**
 
 </div>
 
-[![starspace home: welcome banner, explore topics button, and the dawn of a new age, video included](.github/assets/screenshot.jpg)](https://nitrimandylis.github.io/Starspace/)
+[![starspace home: welcome banner, explore topics button, and the dawn of a new age, video included](.github/assets/screenshot.jpg)](https://starspace.nicktrim.com/)
 
 ---
 
@@ -60,7 +60,7 @@ python3 -m http.server      # → http://localhost:8000
 ```
 
 Or skip all that and visit the
-[live site](https://nitrimandylis.github.io/Starspace/) — GitHub Pages serves
+[live site](https://starspace.nicktrim.com/) — GitHub Pages serves
 it for free, forever, like a small immortal librarian.
 
 ## 🔩 Under the hood
